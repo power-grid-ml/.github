@@ -19,11 +19,13 @@ tool — validated against pandapower, OpenDSS and power-grid-model.
 | [pgg](https://github.com/power-grid-ml/pgg) | `pip install power-grid-gen` | `pgg` | quality-diversity generation of feasible low-voltage distribution grids (CVT-MAP-Elites + differentiable repair) |
 | [pghub](https://github.com/power-grid-ml/pghub) | `pip install power-grid-hub` | `pghub` | real distribution-grid datasets (ding0, SimBench / Kerber, pandapower reference networks) as `pgml` grids, structural metrics, whole-graph embeddings |
 | [pgd](https://github.com/power-grid-ml/pgd) | `pip install power-grid-dash` | `pgd` | a FastAPI service + web UI over simulation, state estimation and live measurements |
-| [suite](https://github.com/power-grid-ml/suite) | `pip install power-grid-suite` | — | everything above in one tested combination; for developers, every package editable in one environment (submodules + pixi) and the SLURM cluster jobs |
+| [power-grid-suite](https://github.com/power-grid-ml/power-grid-suite) | `pip install power-grid-suite` | — | everything above in one tested combination; for developers, every package editable in one environment (submodules + pixi) and the SLURM cluster jobs — **start here while nothing is on PyPI** |
 
 Import names stay short (`pgml`, `pgl`, …); the distributions carry the `power-grid-*`
 names. Every package depends only on the public API of the packages below it — `pgml`
-depends on nothing else in the suite.
+depends on nothing else in the suite. **Not on PyPI yet** — publication follows the engine
+paper; until then install from source as described in the
+[power-grid-suite README](https://github.com/power-grid-ml/power-grid-suite#installing--what-works-right-now).
 
 ## Documentation, papers, license
 
